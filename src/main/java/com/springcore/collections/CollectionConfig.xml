@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+<bean name="student1" class="com.springcore.collections.Student">
+	<property name="studentName" value="Ashu"/>
+	
+	<property name="studentPhones">
+		<list>
+			<value>98399393939</value>
+	         <value>88383993939</value>
+			<value>83838838393</value>
+		</list>
+	</property>
+	<property name="studentAddress">
+		<set>
+			<value>pune</value>
+			<value>kanpur</value>
+			<value>mumbai</value>
+		
+		</set>
+	
+	
+	</property>
+	<property name="studentCourses">
+		<map>
+		
+		<entry key="java" value="2month"/>
+		<entry key="python" value="6month"/>
+		
+		</map>
+	
+	</property>
+
+</bean>
+   
+  
+ 
+ </beans>
+ 
